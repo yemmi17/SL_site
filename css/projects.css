@@ -40,25 +40,23 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     box-sizing: border-box;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flip-card-front {
+    color: #f4f4f4;
+    background-image: url('../img/project1.jpg');
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Скрываем содержимое, которое выходит за границы (важно для изображения) */
 }
 
-.flip-card-front {
-    background-color: #333; /* Оставляем фон, если изображение не загрузится */
-    color: #f4f4f4;
-}
-
-.flip-card-front img {
-    max-width: 100%; /* Оставляем */
-    width: 100%; /* Растягиваем на всю ширину контейнера */
-    height: 100%; /* Растягиваем на всю высоту контейнера */
-    object-fit: cover; /* Обрезаем изображение, чтобы оно покрыло контейнер */
-    display: block; /* Убеждаемся, что это блочный элемент */
-}
+/* Удаляем стили для img, так как изображение теперь фон */
+/* .flip-card-front img */
 
 .flip-card-back {
     background-color: #444;
@@ -66,13 +64,21 @@
     transform: rotateY(180deg);
     text-align: left;
     overflow-y: auto;
-    padding: 20px; /* Оставляем отступы только для задней стороны */
+    padding: 20px;
+    /* background-image: url('../img/project1.jpg'); */
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
+}
+
+.flip-card-back > * {
+    /*position: static; */
+    /* z-index: auto; */
 }
 
 .flip-card-back h3 {
-     color: #ffeb3b; /* Цвет заголовка на обратной стороне */
-     margin-top: 0;
-     margin-bottom: 15px;
+    color: #ffeb3b;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .flip-card-back p {
@@ -108,4 +114,11 @@
         grid-template-columns: 1fr; /* На мобильных - одна колонка */
         gap: 20px;
     }
+}
+
+#projects h2 {
+    color: #ffeb3b; /* Цвет заголовка */
+    margin-top: 0;
+    margin-bottom: 30px; /* Отступ снизу */
+    text-align: center; /* Центрируем */
 } 
