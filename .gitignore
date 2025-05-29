@@ -1,0 +1,5 @@
+# Ignore all files in the img directory
+img/*
+
+# Optionally, ignore the directory itself if it's empty after ignoring files
+# img/ 
