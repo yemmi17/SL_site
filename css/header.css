@@ -1,0 +1,80 @@
+header {
+    background-color: rgba(17, 17, 17, 0.5); /* Более прозрачный темный фон */
+    padding: 15px 0; /* Горизонтальный отступ будет у контейнера */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Оставляем тень */
+    position: fixed; /* Закрепляем хедер */
+    top: 0; /* Вверху страницы */
+    width: 100%; /* На всю ширину */
+    z-index: 100; /* Поверх остального контента */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* Распределяем пространство */
+    align-items: center; /* Выравниваем по центру по вертикали */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #f4f4f4;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-grow: 1; /* Позволяет навигации занять доступное пространство */
+    justify-content: center; /* Центрируем элементы навигации */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Уменьшаем отступы между пунктами меню */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Белые ссылки */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #dddddd; /* Чуть темнее белый при наведении */
+}
+
+.contact-links {
+    display: flex;
+    gap: 15px; /* Отступ между иконками контактов */
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #ffffff; /* Белые ссылки */
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: #dddddd;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* На маленьких экранах располагаем вертикально */
+        gap: 15px; /* Отступ между блоками */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Пункты меню вертикально */
+        align-items: center; /* Центрируем пункты меню */
+    }
+
+    header nav ul li {
+        margin: 5px 0; /* Отступ между вертикальными пунктами меню */
+    }
+
+    .contact-links {
+        justify-content: center; /* Центрируем контакты */
+    }
+} 

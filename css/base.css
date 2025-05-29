@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+    /* margin: 0; */ /* Удаляем */
+    /* padding: 0; */ /* Удаляем */
+    /* padding-top: 70px; */ /* Удаляем */
+    background-color: #1a1a1a; /* Оставляем цвет фона */
+    color: #f4f4f4; /* Оставляем цвет текста */
+    /* background-image: url('your-background-image.jpg'); */ /* Удаляем фоновое изображение */
+    /* background-size: cover; */ /* Удаляем */
+    /* background-position: center; */ /* Удаляем */
+    /* background-repeat: no-repeat; */ /* Удаляем */
+    /* background-attachment: fixed; */ /* Удаляем */
+    display: flex; /* Используем Flexbox */
+    flex-direction: column; /* Располагаем элементы вертикально */
+    min-height: 100vh; /* Минимальная высота viewport */
+}
+
+main {
+    /* padding: 30px 20px; */ /* Удаляем */
+    /* width: 100%; */ /* Удаляем */
+    /* margin: 0; */ /* Удаляем */
+    background-color: #222; /* Оставляем цвет фона */
+    /* box-shadow: none; */ /* Удаляем */
+    /* border-radius: 0; */ /* Удаляем */
+    color: #f4f4f4; /* Оставляем цвет текста */
+    flex-grow: 1; /* Главный контент займет все доступное пространство */
+    padding-top: 80px; /* Добавляем отступ сверху для фиксированного хедера */
+}
+
+/* Пример стилизации футера */
+footer {
+    color: #f4f4f4; /* Оставляем цвет текста */
+    text-align: center; /* Оставляем выравнивание текста */
+    /* padding: 20px; */ /* Удаляем */
+    /* margin-top: 40px; */ /* Удаляем */
+    background-color: #222; /* Оставляем цвет фона */
+    padding: 20px; /* Добавляем немного отступа */
+}
+
+.container {
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 0 20px; /* Горизонтальные отступы */
+}
+
+main .container section {
+    padding: 40px 0; /* Вертикальные отступы для секций */
+} 

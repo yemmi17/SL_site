@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikita SL Portfolio</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nikita SL</h1>
+            <nav>
+                <ul>
+                    <li><a href="#projects">PROJECT</a></li>
+                    <li><a href="#about">ОБО МНЕ</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <!-- Добавляем контакт в навигацию, если он там был -->
+                    <!-- <li><a href="#contact">КОНТАКТЫ</a></li> -->
+                </ul>
+            </nav>
+            <div class="contact-links">
+                <a href="https://t.me/Yemmi0">TG</a>
+                <a href="#">VK</a>
+                <a href="#">EMAIL</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="projects">
+                <h2>PROJECT</h2>
+                <div class="project-list">
+                    <!-- Проект 1 -->
+                    <div class="project-item">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <!-- Содержимое для лицевой стороны Проекта 1 -->
+                                <!-- Возможно, изображение -->
+                                <img src="img/project1.jpg" alt="Изображение Проекта 1">
+                            </div>
+                            <div class="flip-card-back">
+                                <!-- Содержимое для обратной стороны Проекта 1 -->
+                                <!-- Дополнительная информация, технологии, ссылка и т.д. -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Проект 2 -->
+                    <div class="project-item">
+                         <div class="flip-card-inner">
+                             <div class="flip-card-front">
+                                 <!-- Содержимое для лицевой стороны Проекта 2 -->
+                                 <img src="img/project1.jpg" alt="Изображение Проекта 2">
+                             </div>
+                             <div class="flip-card-back">
+                                  <!-- Содержимое для обратной стороны Проекта 2 -->
+                                  <h3>Проект 2 - Подробности</h3>
+                                  <p>Подробное описание Проекта 2.</p>
+                              </div>
+                         </div>
+                     </div>
+                    <!-- Проект 3 -->
+                    <div class="project-item">
+                          <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <!-- Содержимое для лицевой стороны Проекта 3 -->
+                                  <img src="img/project1.jpg" alt="Изображение Проекта 3">
+                              </div>
+                              <div class="flip-card-back">
+                                   <!-- Содержимое для обратной стороны Проекта 3 -->
+                                   <h3>Проект 3 - Подробности</h3>
+                                   <p>Подробное описание Проекта 3.</p>
+                               </div>
+                          </div>
+                      </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="container">
+                    <div class="about-photo">
+                        <!-- Место для фото -->
+                        <img src="img/avatare.jpg" alt="Моё фото" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <div class="about-text">
+                        <h2>ОБО МНЕ</h2>
+                        <p>Привет, меня зовут Борисов Никита. Я начинающий DevOps | Python Developer.</p>
+                        <p>И это мой сайт-портфолио, на котором вы можете узнать немного обо мне и моих проектах.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <div class="container">
+                    <h2>SKILLS:</h2>
+                    <div class="skills-list">
+                        <!-- Hard Skills -->
+                        <div class="skill-category">HARD SKILLS:</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">Linux</div>
+                        <div class="skill-item">K8S</div>
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">Network</div>
+                        <div class="skill-item">Grafana</div>
+                        <div class="skill-item">SQLite</div>
+                        <div class="skill-item">Jenkins</div>
+                        <!-- CI/CD -->
+                        <div class="skill-item">CI/CD</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Удаляем секцию контактов, если она не показана явно на макете -->
+            <!-- <section id="contact">
+                 <div class="container">
+                    <h2>Контакты</h2>
+                    <p>Свяжитесь со мной:</p>
+                 </div>
+             </section> -->
+        </div>
+    </main>
+
+    <footer>
+         <div class="container">
+             <!-- Футер, если нужен -->
+             <p>&copy; 2025 Nikita SL. All rights reserved.</p>
+         </div>
+     </footer>
+
+    <!-- Удаляем все скрипты, так как их нет на макете -->
+    <script src="js/flip-cards.js"></script>
+
+</body>
+</html> 
